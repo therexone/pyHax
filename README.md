@@ -21,6 +21,8 @@ Reset the MAC-
 
 > `python3 network_scanner.py 10.2.0.1/24` will scan the all IPs in the gateway and return MAC addresses for the responses.
 
+<hr>
+
 ### ARP Spoofer
 *Requires port forwarding to be enabled on your machine* 
 
@@ -30,12 +32,40 @@ Reset the MAC-
 
 > `python3 arp_spoof.py -t 10.0.2.4 -s 10.0.2.1`
 
+<hr>
+
 ### Packet Sniffer
 *Requires ARP spoofing*
 
 **Usage**: `packet_sniffer.py [-h] [-i INTERFACE]`
 
 > `python3 packet_sniffer.py -i wlan0`
+
+<hr>
+
+### Net Cut
+> Disables internet for the ARP spoofed victim machine
+
+*Redirect all the packets recieved on your machine to a queue using the linux command -*
+
+ `iptables -I FORWARD -j NFQUEUE --queue-num 0`
+
+
+Accessing this queue in the Python script-
+
+ `pip install netfilterqueue`
+
+ > `netfilterqueue` might have some issues while installing on Python 3.8 check this [link](https://github.com/kti/python-netfilterqueue/issues/53).
+
+ Make sure port forwarding is enabled and ARP spoof another machine
+
+ Usage: `python3 net_cut.py'
+
+*Flush the iptables after running the script*
+
+`iptables --flush`
+
+<hr>
 
 
 
