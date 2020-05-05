@@ -16,6 +16,8 @@ Example-
 Reset the MAC-
 > `python3 mac_changer.py wlan0 -r`
 
+<hr>
+
 ### Network Scanner
 **Usage**: `network_scanner.py [-h] ip` 
 
@@ -59,7 +61,7 @@ Accessing this queue in the Python script-
 
  Make sure port forwarding is enabled and ARP spoof another machine
 
- Usage: `python3 net_cut.py'
+ >Usage: `python3 net_cut.py`
 
 *Flush the iptables after running the script*
 
