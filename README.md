@@ -67,6 +67,13 @@ Accessing this queue in the Python script-
 
 <hr>
 
+### DNS Spoofer
+
+*Edit the domain name to spoof(`rrname`) and the ip(`rdata`)*
+
+**Usage**: `python3 dns_spoof.py`
+
+<hr>
 
 
 
