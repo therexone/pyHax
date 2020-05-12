@@ -77,5 +77,16 @@ Accessing this queue in the Python script-
 
 <hr>
 
+### Downloads replacer
+
+*This script will only work with http sites. Try along with `sslstrip` for https downloads*
+
+*Requires `netfilterqueue`*
+
+**Usage**: Edit the script for your requirements(filetype, download link) and then do:
+
+`python3 replace_downloads.py`
+
+<hr>
 
 
