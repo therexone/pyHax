@@ -3,7 +3,7 @@ A collection of tools written in python.
 
 ## Requirements 
 - [Scapy](https://pypi.org/project/scapy/) `pip install scapy`
-- A Linux system
+- A Linux system (Kali/ParrotOS works best)
 
 <hr>
 
